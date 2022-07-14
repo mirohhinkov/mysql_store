@@ -43,11 +43,11 @@ def global_error_handling(err):
 def sql_query(query, read, *args):
     global err_code
     conn = pymysql.connect(
-        host="localhost",
+        host="host",
         port=3306,
         user="root",
         password="",
-        database="solentDBAssessment"
+        database="DBA"
     )
     rows = None
     try:
